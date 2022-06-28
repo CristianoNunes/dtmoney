@@ -1,4 +1,3 @@
-import { useState } from 'react'
 import logoImg from '../../assets/logo.svg'
 
 import { Container, Content } from './styles'
@@ -8,16 +7,6 @@ interface HeaderProps {
 }
 
 export function Header({onOpenNewTransactionModal}: HeaderProps) {
-
-  const [isNewTransactionModalOpen, setIsNewTransactionModalOpen] = useState(false);
-
-  function handleOpenNewTransactionModal() {
-    setIsNewTransactionModalOpen(true)
-  }
-
-  function handleCloseNewTransactionModal() {
-    setIsNewTransactionModalOpen(false)
-  }
 
   return(
     <Container>
